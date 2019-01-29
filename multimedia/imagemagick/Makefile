@@ -89,14 +89,14 @@ define Package/imagemagick/install
 	$(INSTALL_DIR) $(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/*.so \
 		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/
-#	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/*.la \
-#		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/*.la \
+		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/coders/
 
 	$(INSTALL_DIR) $(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/*.so \
 		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/
-#	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/*.la \
-#		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/
+	$(CP) $(PKG_INSTALL_DIR)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/*.la \
+		$(1)/usr/lib/ImageMagick-$(PKG_VERSION)/modules-Q8/filters/
 
 
 	$(INSTALL_DIR) $(1)/usr/share/ImageMagick-7/
